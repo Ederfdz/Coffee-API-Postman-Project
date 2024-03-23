@@ -3,7 +3,7 @@ name: Automated API tests using Postman CLI
 on:
   # Schedule to run daily at 5pm
   schedule:
-    - cron: '0 5 * * *'  
+    - cron: '0 6 * * *'  
 
 jobs:
   automated-api-tests:
