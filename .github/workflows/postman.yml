@@ -1,0 +1,20 @@
+name: Automated API tests using Postman CLI
+
+on:
+  # Schedule to run daily at 8pm
+  schedule:
+    - cron: '0 8 * * *'  
+
+jobs:
+  automated-api-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Postman CLI
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+      - name: Run API tests
+        run: |
+          postman collection run "27786671-71a7dd34-ba00-49ec-9619-cba2dfe84dea"
