@@ -1,5 +1,5 @@
 # Postman API Automation Project
-
+[![Automated API tests using Postman CLI](https://github.com/Ederfdz/Coffee-API-Postman-Project/actions/workflows/postman.yml/badge.svg)](https://github.com/Ederfdz/Coffee-API-Postman-Project/actions/workflows/postman.yml)
 ## About this project:
 
 This project automates API testing for the Valentino Artisan Coffee House API using Postman. It includes:
